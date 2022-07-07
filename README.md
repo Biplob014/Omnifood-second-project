@@ -51,9 +51,8 @@ We are a technology company first, but with a major focus on consumer well-being
 | Address | Phone | Email |
 | ------- | ----- | ----- |
 
-| Airport Road,
-Chattogram - 8209,
-Bangladesh | +88 01314328014 | biplobcs514@gmail.com
+Chattogram,
+Bangladesh +88 01314328014 biplobcs514@gmail.com
 
  <br>
 
