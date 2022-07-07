@@ -48,11 +48,9 @@ We are a technology company first, but with a major focus on consumer well-being
 
 ### Contact Information
 
-| Address | Phone | Email |
-| ------- | ----- | ----- |
-
-Chattogram,
-Bangladesh +88 01314328014 biplobcs514@gmail.com
+| Address                                     | Phone          | Email                 |
+| ------------------------------------------- | -------------- | --------------------- |
+| Airport Road, Chattogram - 8200, Bangladesh | +8801314328014 | biplobcs514@gmail.com |
 
  <br>
 
