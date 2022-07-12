@@ -56,17 +56,10 @@
 
 /* STICKY NAVIGATION */
 .sticky .header {
-  /* If position absolute and fixed has been used,
-  then the content leaves it's space like float and the other's
-  content fill it in */
   position: fixed;
   top: 0;
   bottom: 0;
   width: 100%;
-
-  /* This height is needed for js and 
-  sticky height when sticky will apply otherwise,
-  the height is default 9.6rem in header */
   height: 8rem;
   padding-top: 0;
   padding-bottom: 0;
@@ -74,12 +67,10 @@
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
-
-/* When sticky will apply 
-  then this code will apply to add 9.6rem space on top*/
 .sticky .section-hero {
   margin-top: 9.6rem;
 }
+
 /* ------/------- */
 /* HERO SECTION */
 /* ------/------- */
@@ -118,8 +109,6 @@
 }
 .delivered-imgs img {
   height: 4.8rem;
-  /* width: auto; */
-  /* width only declared for safary browser to work perfectly */
   width: 4.8rem;
   border-radius: 50%;
   margin-right: -1.6rem;
@@ -163,6 +152,7 @@
   filter: brightness(0);
   opacity: 50%;
 }
+
 /* ------/------- */
 /* HOW IT WORKS SECTION */
 /* ------/------- */
@@ -198,10 +188,6 @@
 }
 .step-img-box::before {
   width: 60%;
-  /* it won't work */
-  /* height: 60%; */
-
-  /* 60% of parents width (to add height) */
   padding-bottom: 60%;
   background-color: #fdf2e9;
   z-index: -2;
@@ -225,15 +211,11 @@
 .meal {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
-
-  /* to display border radius on the picture */
   overflow: hidden;
   transition: all 0.4s;
 }
 
 .meal:hover {
-  /* translate(horizental x,vertical y). */
-  /* transform: translate(2rem,2rem); */
   transform: translateY(-1.2rem);
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
@@ -253,9 +235,6 @@
   text-transform: uppercase;
   color: #333;
   font-weight: 600;
-
-  /* border-radius: 50%; */
-  /* for adding radius in vagetarien */
   border-radius: 100px;
 }
 
@@ -307,8 +286,6 @@
 .section-testimonial {
   background-color: #fdf2e9;
   display: grid;
-
-  /* don't have restriction to use 1fr everytime. */
   grid-template-columns: 55fr 45fr;
   align-items: center;
 }
@@ -379,8 +356,6 @@
   background-color: #fdf2e9;
   padding: 4.8rem;
   position: relative;
-
-  /* for cutting ribbon */
   overflow: hidden;
 }
 
@@ -466,9 +441,6 @@
 /* CTA SECTION */
 /* ------/------- */
 .section-cta {
-  /* padding: 9.6rem 0 12.8rem 0; */
-
-  /* top/horizental/bottom */
   padding: 4.8rem 0 12.8rem;
 }
 
@@ -477,10 +449,6 @@
   grid-template-columns: 2fr 1fr;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
-
-  /* liner-gradient is always use with background-img and has deg and direction */
-  /* background-image: linear-gradient(90deg, #eb984e, #e67e22); */
-
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   overflow: hidden;
 }
@@ -491,9 +459,6 @@
 }
 
 .cta .heading-secondary {
-  /* color: #45260a; */
-
-  /* force color to inherit from parent */
   color: inherit;
   margin-bottom: 3.2rem;
 }
@@ -511,8 +476,6 @@
     ),
     url("../img/eating.jpg");
   background-size: cover;
-
-  /* background-position has top,bottom,left,right,center position of img */
   background-position: center;
 }
 
@@ -541,9 +504,6 @@
   border-radius: 9px;
   box-shadow: 0 1 2px rgba(0, 0, 0, 0.1);
 }
-
-/* Psuedo elements use for not on web-content
-wherease it's used for placeholder, creating something before or after of any content */
 .cta-form input::placeholder {
   color: #aaa;
 }
