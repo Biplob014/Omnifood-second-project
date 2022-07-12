@@ -1,11 +1,6 @@
-/* rem and em do not depend on  html font-sizes in queries!
-Instead, 1rem= 1em = 16px */
-
 /* ------/------- */
-/* Below (84*16)=1350px (Smaller desktops) */
-/* ------/------- */
-
 /* 1350 / 16 = 84em */
+/* ------/------- */
 @media (max-width: 84em) {
   .hero {
     max-width: 120rem;
@@ -21,8 +16,6 @@ Instead, 1rem= 1em = 16px */
 /* ------/------- */
 /* Below (75*16)=1200px (landscape tablet) */
 /* ------/------- */
-
-/* 1200 / 16 = 75em */
 @media (max-width: 75em) {
   html {
     /* 9 / 16 */
@@ -55,8 +48,6 @@ Instead, 1rem= 1em = 16px */
 /* ------/------- */
 /* Below (59*16)=944px (tablet) */
 /* ------/------- */
-
-/* 944 / 16 = 59em */
 @media (max-width: 59em) {
   html {
     /* 8 / 16= 0.5 =50% */
@@ -104,7 +95,6 @@ Instead, 1rem= 1em = 16px */
   }
 
   .cta {
-    /* 3/5 = 60% + 2/5 = 40% */
     grid-template-columns: 3fr 2fr;
   }
 
@@ -124,11 +114,7 @@ Instead, 1rem= 1em = 16px */
 
   .main-nav {
     background-color: rgba(255, 255, 255, 0.6);
-
-    /* This property blurs everything behind something */
     backdrop-filter: blur(10px);
-
-    /* here the relative position is header */
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -137,37 +123,19 @@ Instead, 1rem= 1em = 16px */
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* Transition has 4 keyword such as :
-     selector(all,background etc) / time / fast or slow (start, middle, end) / delay time(0s) */
-    /* transition: all 0.5s ease-in 2s; */
     transition: all 0.5s ease-in;
-
-    /* This will use for animation of .main-nav.
-    It will push .main-nav to right100% */
     transform: translateX(100%);
 
     /* HIDE NAVIGATION */
-    /* display:none property doesn't allow animation */
-    /* display: none; */
-
-    /* We can use Opacity:0 to use animation because Opacity allows to use animation */
-    /* 1) Hide it visually */
     opacity: 0;
-
-    /* 2) Make it unaccessable to mouse and keyboard */
     pointer-events: none;
-
-    /* 3) Hide it from screen reader */
     visibility: hidden;
   }
 
-  /* It will work if .nav-open class exist in header */
   .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
-    /* It will back .main-nav to 0 */
     transform: translateX(0);
   }
 
@@ -193,7 +161,6 @@ Instead, 1rem= 1em = 16px */
 /* Below (44*16)=704px (Smaller tablet) */
 /* ------/------- */
 
-/* 704 / 16 = 44em */
 @media (max-width: 44em) {
   .grid--3-cols,
   .grid--4-cols {
@@ -261,8 +228,6 @@ Instead, 1rem= 1em = 16px */
     height: 1.2rem;
   }
 
-  /* Here nth-child select 2no chiild of parent which is container 
-here, not the child of .step-img-box class */
   .step-img-box:nth-child(2) {
     grid-row: 1;
   }
@@ -270,7 +235,6 @@ here, not the child of .step-img-box class */
     grid-row: 5;
   }
   .step-img-box {
-    /* It's reduced the margin-bottom from step-img-box  */
     transform: translateY(2.4rem);
   }
 
@@ -288,20 +252,8 @@ here, not the child of .step-img-box class */
   }
 
   .cta-img-box {
-    /* Here without height img will not be visible 
-    because in html there is no content in div. So,
-    vertically img has no height but horizantally it's
-    shown before, because the othe column of div 
-    container had content.  */
     height: 32rem;
     grid-row: 1;
   }
 }
 
-/* 
--FONT SIZES(px)
- 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-  
--SPACING SYSTEM (px)
-   2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-  */
